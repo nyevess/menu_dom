@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+    <header>
+    <h1>Bienvenidos al Restaurante DOM</h1>
+</header>
+
+<main>
+    <section class="usuario">
+    <label for="">Introduzca su nombre y pulse guardar por favor:</label>
+    <input type="text" id="input_nombre">
+    <button type="submit" id="boton_user">Guardar</button>
+  
+    </section>
+    
+    <section class="pedido">
+    <h4>Nuestra Carta</h4>
+    <ul>
+        <li>  Patatas -- <span>3</span> €</li>
+        <li> Costillas -- <span>8</span> €</li>
+        <li> Ensaladilla --  <span>4</span> €</li>
+        <li> Arroz brut -- <span>9</span> €</li>     
+    </ul>
+<label for=""><span id="nombre_usuario"></span> Seleccione lo que quiere pedir:</label>
+<select name="" id="opcion">
+<option id="patata" value="3">Patatas</option>
+<option id="costilla" value="8">Costillas</option>
+<option id="ensaladilla" value="4">Ensaladilla</option>
+<option  id="arroz" value="9">Arroz brut</option>
+</select>
+<button type="submit" id="pedir">Pedir</button>
+
+<h5><span id="usuario_pedido"></span> , el total de su pedido es:</h5>
+<h5> <span id="pedido"></span>€</h5>
+</section>
+
+</main>
+<script src="index.js"></script>
+</body>
+</html>
